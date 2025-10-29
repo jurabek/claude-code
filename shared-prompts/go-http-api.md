@@ -80,31 +80,35 @@ func adminOnly(h http.Handler) http.Handler {
 ```
 
 ### Error Handling
-Implement centralized error handling using handler adapters:
-
-```go
-// Handler that returns errors
-func fooHandler(w http.ResponseWriter, r *http.Request) error {
-    if err := bar(); err != nil {
-        return fmt.Errorf("handling bar failed: %w", err)
+- Implement centralized error handling using handler adapters.
+    Example: 
+    ```go
+    // Handler that returns errors
+    func fooHandler(w http.ResponseWriter, r *http.Request) error {
+        if err := bar(); err != nil {
+            return fmt.Errorf("handling bar failed: %w", err)
+        }
+        return nil
     }
-    return nil
-}
 
-// Error handler adapter
-func ErrorHandler(f func(w http.ResponseWriter, r *http.Request) error) http.HandlerFunc {
-    return func(w http.ResponseWriter, r *http.Request) {
-        err := f(w, r)
-        if err != nil {
-            statusCode, message := mapFooErrors(err)
-            respondWithError(w, r, statusCode, message)
+    // Error handler adapter
+    func ErrorHandler(f func(w http.ResponseWriter, r *http.Request) error) http.HandlerFunc {
+        return func(w http.ResponseWriter, r *http.Request) {
+            err := f(w, r)
+            if err != nil {
+                statusCode, message := mapFooErrors(err)
+                respondWithError(w, r, statusCode, message)
+            }
         }
     }
-}
 
-// Usage:
-mux.HandleFunc("/foo", ErrorHandler(fooHandler))
-```
+    // Usage:
+    mux.HandleFunc("/foo", ErrorHandler(fooHandler))
+    ```
+
+## Open API Specs
+- Always maintain open api specs for exposed API's 
+- Be concise about what fields are exposed and what request parameters are required.
 
 ## Security Best Practices
 

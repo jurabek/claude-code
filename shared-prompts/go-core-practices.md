@@ -65,6 +65,6 @@
 1. Always receive interfaces as a dependency.
 2. Prioritize **readability, simplicity, and maintainability**.
 3. Design for **change**: isolate business logic and minimize framework lock-in.
-4. Create small interfaces on the consumer side.
+4. Create small interfaces where it is used, not where it implemented unless it is necessary.
 5. Ensure all behavior is **observable, testable, and documented**.
 6. **Automate workflows** for testing, building, and deployment.

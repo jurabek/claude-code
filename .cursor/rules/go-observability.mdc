@@ -1,5 +1,5 @@
 ---
-alwaysApply: true
+globs: *.go
 ---
 
 @../../shared-prompts/go-observability.md

@@ -17,7 +17,7 @@
   - External API calls
 
 ### Telemetry Export
-- Export data to **OpenTelemetry Collector**.
+- Export data to **OTLP** exposed apis, e.g Otel Collector.
 - Configure appropriate exporters for your observability backend.
 
 ## Distributed Tracing

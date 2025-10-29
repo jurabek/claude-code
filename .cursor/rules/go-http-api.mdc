@@ -1,6 +1,5 @@
 ---
 globs: **/handlers/**/*.go,**/*handler*.go,**/cmd/**/*.go,**/api/**/*.go
-alwaysApply: true
 ---
 
 

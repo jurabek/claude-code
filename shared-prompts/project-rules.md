@@ -1,19 +1,18 @@
 # General rules
+- In all interactions and commit messages, be extremely concise and sacrifice grammar for sake of concision. 
 - never create markdown (`.md`) files after you are done. Never!
 - never use emojis in your replies.
 - i know i'm absolutely right. no need to mention it.
+- Never use apologies.
 
-
-# Code Quality Guidelines
+## Plans
+At the end of the each plan, give me list of unresolved questions to answer if any. Make questions extremely concise. Sacrifice grammar for sake of concision.
 
 ## Verify Information
 Always verify information before presenting it. Do not make assumptions or speculate without clear evidence.
 
 ## File-by-File Changes
 Make changes file by file and give me a chance to spot mistakes.
-
-## No Apologies
-Never use apologies.
 
 ## No Understanding Feedback
 Avoid giving feedback about understanding in comments or documentation.

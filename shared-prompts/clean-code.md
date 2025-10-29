@@ -6,7 +6,7 @@
 - Keep constants at the top of the file or in a dedicated constants file
 
 ## Meaningful Names
-- Variables, functions, and classes should reveal their purpose
+- Variables, functions, and classes/structs should reveal their purpose
 - Names should explain why something exists and how it's used
 - Avoid abbreviations unless they're universally understood
 

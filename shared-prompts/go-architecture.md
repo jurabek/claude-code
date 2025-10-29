@@ -4,7 +4,7 @@
 
 ### Clean Architecture
 - Structure code into layers:
-  - **Handlers/Controllers**: HTTP/gRPC endpoints
+  - **Handlers**: HTTP/gRPC endpoints
   - **Services/Use Cases**: Business logic
   - **Repositories/Data Access**: Data persistence
   - **Domain Models**: Core entities and types
@@ -49,11 +49,11 @@ test/             # Test utilities, mocks, and integration tests
 ## Documentation Standards
 
 ### Code Documentation
-- Document public functions and packages with **GoDoc-style comments**.
+- Document public functions and packages with **GoDoc-style comments**. if asked
 - Provide concise **READMEs** for services and libraries.
 - Maintain `CONTRIBUTING.md` and `ARCHITECTURE.md` to guide team practices.
 
 ### Best Practices
 - Keep documentation close to the code.
-- Update documentation with code changes.
+- Update documentation with code changes, if any.
 - Include examples where helpful.
